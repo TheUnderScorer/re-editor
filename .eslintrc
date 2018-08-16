@@ -6,17 +6,33 @@
     ],
     "no-unused-vars": "warn",
     "no-useless-escape": "warn",
-    "no-unused-labels": "warn"
+    "no-unused-labels": "warn",
+    "no-console": "warn"
   },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
   "env": {
-    "es6": true
+    "es6": true,
+    "browser": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
+    },
+    "ecmaFeatures": {
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint"
 }

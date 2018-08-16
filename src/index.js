@@ -1,13 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import Routes from './components/routes';
 import './assets/scss/general.scss';
+import Editor from './components/editor/Editor';
 
 ReactDOM.render( (
-    <Router>
-        <Routes/>
-    </Router>
+    <Editor/>
 ), document.getElementById( 'root' ) );
 
 

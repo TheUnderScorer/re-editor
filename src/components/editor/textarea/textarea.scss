@@ -1,5 +1,8 @@
+@import '../../../assets/scss/variables';
+
 .editor-textarea {
 	width: 70%;
 	height: 70%;
 	resize: none;
+	font-size: 1.5em;
 }

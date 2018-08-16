@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import FullContainer from '../containers/full-container';
+import Container from '../containers/container';
 import TextArea from './textarea/textarea';
 import './editor.scss';
+import Controls from './controls/controls';
 
 /**
  * Main editor class
@@ -44,9 +45,10 @@ class Editor extends Component {
 
 
         return (
-            <FullContainer classList="editor-container">
+            <Container classList="editor-container" height="70%" width="70%">
+                <Controls api={this.api}/>
                 <TextArea api={this.api} value={this.api.getValue()}/>
-            </FullContainer>
+            </Container>
         );
     }
 

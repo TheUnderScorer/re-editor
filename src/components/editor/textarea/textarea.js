@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, object } from 'prop-types';
-import { handleKeyup } from './handle-keyup';
+import { handleKeyup } from './handleKeyup';
 import './textarea.scss';
 
 const TextArea = ( { value = '', api } ) => {

@@ -41,6 +41,16 @@ class Editor extends Component {
         }
     };
 
+    componentDidUpdate() {
+
+        if ( this.state.value ) {
+            window.onbeforeunload = () => true;
+        } else {
+            window.onbeforeunload = undefined;
+        }
+
+    }
+
     render() {
 
 
